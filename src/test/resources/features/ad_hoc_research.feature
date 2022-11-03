@@ -1,4 +1,4 @@
-@Regression
+@wip
 Feature: Ad Hoc Research Web Page Automation
 
   Background:
@@ -28,7 +28,7 @@ Feature: Ad Hoc Research Web Page Automation
       | Big Data & Cyber Defense   | Big Data & Cyber Defense - Ad hoc Research   |
       | Tactical Network Emulation | Tactical Network Emulation - Ad hoc Research |
 
-  @wip
+
   Scenario:
     When user clicks on Careers module
     And user scrolls down to Open Positions
