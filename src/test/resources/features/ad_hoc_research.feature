@@ -4,7 +4,7 @@ Feature: Ad Hoc Research Web Page Automation
   Background:
     Given user is on the main page
 
-
+  @test1
   Scenario:
     When user hovers over the About Us module
     When user selects Executive Team
@@ -14,7 +14,7 @@ Feature: Ad Hoc Research Web Page Automation
     And user clicks on CONTACT US button
     Then the following message should be displayed "Thank you for your message. It has been sent."
 
-
+  @test2
   Scenario Outline:
     When user hovers over Solutions module
     And user selects each "<option>"
@@ -28,7 +28,7 @@ Feature: Ad Hoc Research Web Page Automation
       | Big Data & Cyber Defense   | Big Data & Cyber Defense - Ad hoc Research   |
       | Tactical Network Emulation | Tactical Network Emulation - Ad hoc Research |
 
-
+  @test3
   Scenario:
     When user clicks on Careers module
     And user scrolls down to Open Positions

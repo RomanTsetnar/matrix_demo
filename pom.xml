@@ -8,43 +8,45 @@
     <artifactId>ad_hoc_research</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!--Maven built project with Java 11 -->
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <!-- Added cucumber with JAVA  -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>7.0.0</version>
         </dependency>
-
+        <!-- Added cucumber JUnit  -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>7.0.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <!-- Added WebDriver Manager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.1.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+
+        <!-- Added Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
         </dependency>
+
         <dependency>
             <groupId>me.jvt.cucumber</groupId>
             <artifactId>reporting-plugin</artifactId>
             <version>7.2.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
@@ -53,7 +55,6 @@
 
 
     </dependencies>
-
 
 
 </project>

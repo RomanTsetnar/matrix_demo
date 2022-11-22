@@ -44,7 +44,7 @@ public class ad_ho_researcg_step_deffs {
     public void user_enters_correct_credentials_phone_number_company_name() {
         page.nameInputBox.sendKeys(faker.name().fullName());
         page.emailInputBox.sendKeys(faker.internet().emailAddress());
-        page.phoneInputBox.sendKeys(faker.phoneNumber().cellPhone());
+        page.phoneInputBox.sendKeys(faker.numerify("##########"));
         page.companyInputBox.sendKeys(faker.company().name());
     }
 
@@ -60,6 +60,7 @@ public class ad_ho_researcg_step_deffs {
 
     @Then("the following message should be displayed {string}")
     public void the_following_message_should_be_displayed(String expectedMsg) {
+        BrowserUtilities.waitForVisibilityOf(page.successMsg);
         String actualMsg = page.successMsg.getText();
         Assert.assertEquals("text verification failed", expectedMsg, actualMsg);
     }
@@ -145,6 +146,7 @@ public class ad_ho_researcg_step_deffs {
     public void user_should_see_the_following_message(String expectedMsg) {
         String actualMsg = careers.applicationSuccessSubmitted.getText();
         Assert.assertEquals("message verification failed",expectedMsg, actualMsg);
+        Driver.getDriver().switchTo().defaultContent();
     }
 
 }
