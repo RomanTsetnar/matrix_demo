@@ -3,7 +3,7 @@ package com.ad_ho_research.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class AboutUsPage extends BasePage{
+public class AboutUsPage extends com.ad_ho_research.pages.BasePage {
 
     @FindBy(xpath = "//h2[.='Drop Us A Message']")
     public WebElement dropUsAMessageText;
@@ -28,6 +28,7 @@ public class AboutUsPage extends BasePage{
 
     @FindBy(xpath = "//div[.='Thank you for your message. It has been sent.']")
     public  WebElement successMsg;
+
 
     @FindBy(linkText = "Home")
     public WebElement homeBtn;
